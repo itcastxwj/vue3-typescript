@@ -25,16 +25,27 @@
       data() {
         return {
           info: { name: "why", age: 18, nba: {name: 'kobe'} },
-          friends: [{name: "why"}, {name: "kobe"}]
+          friends: [
+            {name: "why"}, 
+            {name: "kobe"}
+          ]
         }
       },
       watch: {
+        info(newValue, oldValue) {
+          console.log(newValue, oldValue);
+        },
         "info.name": function(newName, oldName) {
           console.log(newName, oldName);
         },
         "friends[0].name": function(newName, oldName) {
           console.log(newName, oldName);
-        }
+        },
+        // friends: {
+        //   handler(newFriends, oldFriend) {
+        //   },
+        //   deep: true
+        // }
       },
       methods: {
         changeInfo() {
