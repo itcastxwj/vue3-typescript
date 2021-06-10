@@ -2,6 +2,7 @@
   <div id="app">
     <div class="header">
       <main></main>
+      <component :is="asdasd"></component>
     </div>
   </div>
 </template>
