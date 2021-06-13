@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <div class="header">
-      <main></main>
-      <component :is="asdasd"></component>
-    </div>
+    <div>123</div>
+    <main></main>
   </div>
 </template>
 
